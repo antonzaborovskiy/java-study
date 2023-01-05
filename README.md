@@ -50,6 +50,12 @@ Run ./scripts/install_dependencies for install all needed.
 1. ./scripts/test.sh
 2. mvn clean test
 
+### 6. Open testing report with JUnit
+
+  From terminal:
+
+  1. mvn clean install test surefire-report:report
+  2. open target/site/surefire-report.html 
 _________________
 _____________
 ## WebApi task
@@ -95,6 +101,12 @@ Single test
 
 1. "mvn -Dtest="TestFilePath" test"
 
+### 6. Open testing report with JUnit
+
+  From terminal:
+
+  1. mvn clean install test surefire-report:report
+  2. open target/site/surefire-report.html 
 _____________________________
 
 ### @author Anton Zaborovskiy

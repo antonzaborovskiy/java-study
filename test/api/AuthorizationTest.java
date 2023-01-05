@@ -20,7 +20,7 @@ public class AuthorizationTest {
         RestAssured.baseURI = "https://www.dropbox.com";
         
         // set your app key before start testing
-        appKey = "your-app-key";
+        appKey = "1z6uh8j4za5i0ln";
     }
     
     @Test

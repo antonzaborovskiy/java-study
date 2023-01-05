@@ -28,7 +28,7 @@ public class ApiTest {
         this.factory = new ClientFactory();
 
         // update with your correct access token before testing
-        this.token = "your-access-token";
+        this.token = "BWQroaai3btfTfufTnbY8rmtYNtav4gSpxZECtG2x9DvzNWZvprlS0ti0TWcBOol7EFuHtk3MnDGEZVhdXvAOJiYFDAL-HY5sgeXOK1eEmIz_eR-YxhdUEPrbsi2-Q8UO-sBvrg";
     }
     
     @Test
