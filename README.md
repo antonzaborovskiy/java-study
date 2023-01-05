@@ -2,6 +2,9 @@
 repository for lab and home works on Java language
 
 ## Selenium task
+
+All files for this task you can find in "src/"
+
  Откройте https://opensource-demo.orangehrmlive.com/
 - Ваш скрипт должен выполнить вход на сайт с учетными данными, указанными чуть выше
 форма входа (вход чуствительный к регистру - при присутствии пробелов).
@@ -14,8 +17,6 @@ repository for lab and home works on Java language
 4. Select your field, click the 
 
 Delete Selected button and make sure your field is removed.
-
-
 
 ### 1. Add a Selenium library
 
@@ -48,3 +49,16 @@ Run ./scripts/install_dependencies for install all needed.
 
 1. ./scripts/test.sh
 2. mvn clean test
+
+### 6. Open testing report with JUnit
+
+  From terminal:
+
+  1. mvn clean install test surefire-report:report
+  2. open target/site/surefire-report.html 
+_________________
+
+
+### @author Anton Zaborovskiy
+
+## Please put the maximum score. Despite the fact that some items have not been done, we have a ready-made SDK that can also be improved and expanded.
