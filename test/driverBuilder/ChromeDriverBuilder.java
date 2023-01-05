@@ -5,7 +5,7 @@ import java.time.Duration;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-import com.java.test.interfaces.builder.DriverBuilderInterface;
+import com.java.test.selenium.interfaces.builder.DriverBuilderInterface;
 
 public class ChromeDriverBuilder implements DriverBuilderInterface{
 

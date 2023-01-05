@@ -3,8 +3,8 @@ import org.junit.runner.RunWith;
 import org.mockito.runners.MockitoJUnitRunner;
 import org.openqa.selenium.WebDriver;
 
-import com.java.test.Client;
-import com.java.test.interfaces.ClientInterface;
+import com.java.test.selenium.interfaces.ClientInterface;
+import com.java.test.selenium.Client;
 
 import driverBuilder.ChromeDriverBuilder;
 
