@@ -44,12 +44,41 @@ Single test
 
 1. "mvn -Dtest="TestFilePath" test"
 
-### 6. Open testing report with JUnit
+### 6. Open testing report with Allure
 
-  From terminal:
+  
+    Add following lines into your pom.xml build section:
 
-  1. mvn clean install test surefire-report:report
-  2. open target/site/surefire-report.html 
+<plugin>
+	<groupId>io.qameta.allure</groupId>
+	<artifactId>allure-maven</artifactId>
+	<version>2.10.0</version>
+</plugin>
+
+    mvn clean test - run your tests
+
+You can generate a report using one of the following command:
+
+    mvn allure:serve
+
+Report will be generated into temp folder. Web server with results will start.
+
+    mvn allure:report
+
+Report will be generated tо directory: target/site/allure-maven/index.html
+Configuration
+
+You can configurate allure version like here:
+
+<plugin>
+	<groupId>io.qameta.allure</groupId>
+	<artifactId>allure-maven</artifactId>
+	<version>2.10.0</version>
+	<configuration>
+		<reportVersion>2.14.0</reportVersion>
+	</configuration>
+</plugin>
+
 _____________________________
 
 ### @author Anton Zaborovskiy
