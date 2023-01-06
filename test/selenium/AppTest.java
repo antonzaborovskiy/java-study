@@ -33,12 +33,14 @@ public class AppTest {
 
         client.addESSUser(name, surname, "1qaz2wsx#EDC", "Odis  Adalwin");
 
+        // workAround
         Thread.sleep(5000);
 
         client.removeUser(username);
 
         client.searchUser(username);
 
+        // workAround
         Thread.sleep(5000);
 
         builder.close(driver);
