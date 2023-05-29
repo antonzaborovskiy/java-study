@@ -12,22 +12,18 @@ import org.junit.Test;
 
 @RunWith(MockitoJUnitRunner.class)
 public class AuthorizationTest {
-
     private String appKey;
 
     @Before
     public void setup() {
         RestAssured.baseURI = "https://www.dropbox.com";
-        
         // set your app key before start testing
         appKey = "1z6uh8j4za5i0ln";
     }
     
     @Test
     public final void testSuccessApi() throws Exception {
-
         ClientInterface clientForApi = new ClientFactory().build(RestAssured.given());
-
         clientForApi.authorization(appKey);
     }
 }
